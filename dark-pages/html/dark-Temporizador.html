@@ -3,53 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fuso-Horário</title>
-    <link rel="stylesheet" href="assets/CSS/styleFuso.css">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="assets/CSS/styleTemporizador.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 <body>
      <header>
         <div class="title">
-            <h1>Fuso-Horário</h1>
+            <h1>Alarme</h1>
         </div>
 
         <div class="dark-mode">
-            <a href="dark-pages/html/dark-Fuso.html">
-                 <i class="bi bi-moon-stars-fill" style="font-size: 50px; color: rgb(0, 0, 0);"></i>
-            </a>
+            <button>Dark-Mode</button>
         </div>
     </header>
 
     <main>
-        <div class="container">
-            <img src="assets/images/no-mundo-todo.png" alt="Imagem do Globo">
-            
-            <div class="info">
-                <div class="cidade">Pais/cidade</div>
-                <div class="hora">00:00:00</div>
-            </div>
-            
-            <select onchange="mostraHora()" id="cidadeSelect">
-                <option value="" disabled>Selecione um Fuso-Horário</option>
-                <option value="America/Sao_Paulo">São Paulo</option>
-                <option value="America/New_York">Nova York, EUA</option>
-                <option value="Europe/London">Londres, Reino Unido</option>
-                <option value="Europe/Paris">Paris, França</option>
-                <option value="Asia/Tokyo">Tóquio, Japão</option>
-                <option value="Australia/Sydney">Sydney, Austrália</option>
-                <option value="Asia/Dubai">Dubai, Emirados Árabes</option>
-                <option value="Europe/Moscow">Moscou, Rússia</option>
-                <option value="Africa/Johannesburg">Cidade do Cabo, África do Sul</option>
-            </select>
+        <audio id="sound" src="alarm.mp3" style="display: none;"></audio>
+
+    <div class="container">
+        <h2>Minutos:</h2>
+        <select id="minutos" name="minutos"></select>
+
+        <h2>Segundos:</h2>
+        <select id="segundos" name="segundos"></select>
+        <br/>
+        <br/>
+        <button id="comecar">Começar!</button>
+        <button id="parar">Stop</button>
+
+        <div id="display">
+            <h3></h3>
         </div>
-
-
+    </div>
     </main>
 
-     <footer>
+      <footer>
 
         <div class="options">
-            <a href="index.html">
+            <a href="#">
                 <div class="image-clock">
                         <i class="bi bi-clock-fill" style="font-size: 30px;"></i>
                         <h3>Home</h3>
@@ -63,7 +56,7 @@
                 </div>
             </a>
 
-            <a href="#">
+            <a href="Fuso.html">
                 <div class="image-clock">
                         <i class="bi bi-globe-americas" style="font-size: 30px;"></i>
                     <h3>Fuso-Horário</h3>
@@ -77,16 +70,18 @@
                 </div>
             </a>
 
-            <a href="Temporizador.html">
+            <a href="#">
                 <div class="image-clock" >
                         <i class="bi bi-hourglass-split" style="font-size: 30px;"></i>
                     <h3>Temporizador</h3>
                 </div>
             </a>
+        </div>
+
 
         </div>
 
     </footer>
-    <script src="assets/Script/fuso.js"></script>
+    <script src="assets/Script/temporizador.js"></script>
 </body>
 </html>

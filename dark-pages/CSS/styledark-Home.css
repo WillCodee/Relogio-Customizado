@@ -1,0 +1,30 @@
+body,html{
+    color: #fff;
+    background: linear-gradient(90deg, #030303, rgb(36, 34, 34));
+}
+
+h3{
+    color: #fff;
+}
+
+.clock{
+/* position: relative; */
+width: 300px;
+height: 300px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align-last: center;
+border: 2px solid rgb(255, 255, 255);
+}
+
+.clock::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    z-index: 4;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+}

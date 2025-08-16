@@ -1,0 +1,95 @@
+
+
+body,html{
+    color: #fff;
+    background: linear-gradient(90deg, #000000, rgb(36, 34, 34));
+}
+
+h3{
+    color: #fff;
+}
+
+.container .alarm-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 40%;
+    width: 450px;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #818080;
+    box-shadow:  0 10px 25px rgba(0, 0, 0, .1);
+    color: #fff;
+    margin: 10px;
+    padding: 40px;
+    bottom: 40%;
+}
+
+
+.container .alarm-container h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0;
+    border-radius: 5px;
+    box-shadow:  0 10px 25px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.container .content .alarm-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    height: 50px;
+    margin: 10px;
+}
+
+
+.container .content select{
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+}
+
+.container .content select option{
+    width: 100%;
+    background: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    color: black;
+}
+
+.container button{
+    width: 300px;
+    border: none;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 17px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgb(101, 184, 187);
+    color: #fff;
+}
+
+.container button:hover{
+    background: rgb(60, 101, 102);
+}
+
+/* Footer */
+footer{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px black;
+    justify-content: space-between;
+    
+}
+

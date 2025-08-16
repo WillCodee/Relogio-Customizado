@@ -55,8 +55,8 @@ main{
     display: flex;
     align-items: center;
     position: absolute;
-    right: 43%;
-    width: 350px;
+    right: 40%;
+    width: 450px;
     flex-direction: column;
     border-radius: 10px;
     background-color: #333;
@@ -183,3 +183,5 @@ footer{
     color: inherit;
     text-decoration: none;
 }
+
+/* MEDIA QUARE */
