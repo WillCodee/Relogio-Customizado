@@ -22,28 +22,44 @@
     </header>
 
     <main>
-        <div class="container">
+         <div class="container">
             <img src="../../assets/images/no-mundo-todo.png" alt="Imagem do Globo">
             
+            
+            <div id="temp">
+                <img id="temp_img" src="http://openweathermap.org/img/wn/04d@2x.png" alt="Imagem do Tempo">
+                <div>
+                    <p id="temp_value">
+                        00 
+                    </p>
+                    <p id="temp_description">
+                        Descrição
+                    </p>
+                </div>
+            </div>
+            
+
             <div class="info">
-                <div class="cidade">Pais/cidade</div>
+                <div style="display: flex; gap: 5px;">
+                    <i class="bi bi-geo-alt-fill" style="color: red; font-size: 20px;"></i>
+                    <div class="cidade">Pais/cidade</div>
+                </div>
                 <div class="hora">00:00:00</div>
             </div>
             
             <select onchange="mostraHora()" id="cidadeSelect">
                 <option value="" disabled>Selecione um Fuso-Horário</option>
-                <option value="America/Sao_Paulo">São Paulo</option>
-                <option value="America/New_York">Nova York, EUA</option>
-                <option value="Europe/London">Londres, Reino Unido</option>
-                <option value="Europe/Paris">Paris, França</option>
-                <option value="Asia/Tokyo">Tóquio, Japão</option>
-                <option value="Australia/Sydney">Sydney, Austrália</option>
-                <option value="Asia/Dubai">Dubai, Emirados Árabes</option>
-                <option value="Europe/Moscow">Moscou, Rússia</option>
-                <option value="Africa/Johannesburg">Cidade do Cabo, África do Sul</option>
+                <option value="America/Sao_Paulo" data-cidade="São Paulo,BR">São Paulo</option>
+                <option value="America/New_York" data-cidade="New York,US">Nova York, EUA</option>
+                <option value="Europe/London" data-cidade="London,GB">Londres, Reino Unido</option>
+                <option value="Europe/Paris" data-cidade="Paris,FR">Paris, França</option>
+                <option value="Asia/Tokyo" data-cidade="Tokyo,JP">Tóquio, Japão</option>
+                <option value="Australia/Sydney" data-cidade="Sydney,AU">Sydney, Austrália</option>
+                <option value="Asia/Dubai" data-cidade="Dubai,AE">Dubai, Emirados Árabes</option>
+                <option value="Europe/Moscow" data-cidade="Moscow,RU">Moscou, Rússia</option>
+                <option value="Africa/Johannesburg" data-cidade="Cape Town,ZA">Cidade do Cabo, África do Sul</option>
             </select>
         </div>
-
 
     </main>
 
