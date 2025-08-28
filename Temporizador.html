@@ -11,18 +11,34 @@
 <body>
      <header>
         <div class="title">
-            <h1>Alarme</h1>
+            <h1>Temporizador</h1>
         </div>
 
         <div class="dark-mode">
-            <button>Dark-Mode</button>
+            <a href="dark-pages/html/dark-Temporizador.html">
+                <i class="bi bi-moon-stars-fill" style="font-size: 50px; color: rgb(0, 0, 0);"></i>
+            </a>
         </div>
     </header>
 
     <main>
-        <audio id="sound" src="alarm.mp3" style="display: none;"></audio>
+        <audio id="sound" src="assets/audio/alarme clock_audio_ringtone.mp3" style="display: none;"></audio>
+
+        <div class="ampulheta">
+            <img src="../../assets/images/ampulheta.png" alt="">
+        </div>
 
     <div class="container">
+        
+
+        <div id="display">
+            <h3></h3>
+        </div>
+
+        <h2>Horas:</h2>
+        <select id="horas" name="horas">
+        </select>
+
         <h2>Minutos:</h2>
         <select id="minutos" name="minutos"></select>
 
@@ -32,17 +48,15 @@
         <br/>
         <button id="comecar">Começar!</button>
         <button id="parar">Stop</button>
+        <button id="resetar">resetar</button>
 
-        <div id="display">
-            <h3></h3>
-        </div>
     </div>
     </main>
 
       <footer>
 
         <div class="options">
-            <a href="#">
+            <a href="index.html">
                 <div class="image-clock">
                         <i class="bi bi-clock-fill" style="font-size: 30px;"></i>
                         <h3>Home</h3>
