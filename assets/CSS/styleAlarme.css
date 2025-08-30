@@ -55,15 +55,15 @@ main{
     display: flex;
     align-items: center;
     position: absolute;
-    right: 40%;
-    width: 450px;
+    right: 43%;
+    width: 500px;
     flex-direction: column;
     border-radius: 10px;
     background-color: #333;
     box-shadow:  0 10px 25px rgba(0, 0, 0, .1);
     color: #fff;
     margin: 10px;
-    padding: 40px;
+    padding: 50px;
     bottom: 40%;
 }
 
@@ -159,7 +159,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     gap: 100px;
-    margin-left: 35%;
+    margin-left: 30%;
 }
 
 .image-clock{
@@ -185,3 +185,72 @@ footer{
 }
 
 /* MEDIA QUARE */
+
+@media (max-width: 428px){
+      
+.button.mobile {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 12;
+}
+
+.button.mobile::before {
+    content: "+";
+    color: white;
+    font-size: 2rem;
+    transition: transform 0.3s;
+}
+
+.options {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    padding: 15px;
+    display: none; 
+    flex-direction: column;
+    gap: 15px;
+    z-index: 11;
+}
+
+.options a {
+    margin-right: -2px;
+    padding: 0 10px 0;
+}
+
+/* Quando o checkbox está marcado, mostra o menu */
+#menu-toggle:checked ~ .options {
+    display: flex;
+}
+
+/* E anima o + para virar um X */
+#menu-toggle:checked + .button.mobile::before {
+    content: "×";
+    transform: rotate(180deg);
+}
+
+.container .alarm-container{
+    right: 0%;
+    left: -10%;
+    max-width: 100%;
+}
+
+.content .alarm-controls{
+    
+    flex-direction: column;
+}
+
+
+
+}
